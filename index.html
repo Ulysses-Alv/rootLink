@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ulises Alvarenga | rootLink</title>
+    <!-- Favicon -->
+    <link rel="icon" href="https://avatars.githubusercontent.com/Ulysses-alv" type="image/x-icon" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+    <link href="https://fonts.googleapis.com/css?family=Asul|Rubik|Work+Sans" rel="stylesheet">
+    <!--Ink Cursor Script by Ricardo Mendieta https://dribbble.com/shots/5319749-Ink-Cursor-Interaction -->
+
+    <link rel="stylesheet" href="./style.css">
+
+  </head>
+
+  <body>
+    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="800">
+      <defs>
+        <filter id="goo">
+          <feGaussianBlur in="SourceGraphic" stdDeviation="6" result="blur" />
+          <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 35 -15" result="goo" />
+          <feComposite in="SourceGraphic" in2="goo" operator="atop"/>
+        </filter>
+      </defs>
+    </svg>
+    <div class="stamp">
+      <div class="circle">
+        <p id="circle-content"></p>
+      </div>
+      <p></p>
+    </div>
+    <div class="container">
+      <div class="child">
+        <div class="content">
+          <div>
+          <div id="button" class="HoverButton">
+            <div class="bg"></div>
+          </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- Animación de fondo parallax -->
+    <section class="animated-background">
+      <div id="stars1"></div>
+      <div id="stars2"></div>
+      <div id="stars3"></div>
+    </section>
+    <!-- Fin de la animación de fondo parallax -->
+
+    <a id="profilePicture" href="#popup">
+      <img src="https://avatars.githubusercontent.com/Ulysses-alv" alt="Profile Picture">
+    </a>
+
+    <div class="overlay" id="popup">
+      <div class="popup">
+
+        <div class="popup-photo">
+          <a href="https://avatars.githubusercontent.com/Ulysses-alv" target="_blank">
+            <img src="https://avatars.githubusercontent.com/Ulysses-alv" alt="Profile Picture">
+          </a>
+        </div>
+        <div class="popup-quote">
+          Peaches. Peaches. Peaches. Peaches.
+        </div>
+        <a class="popup-close" onclick="history.back()">&times;</a>
+      </div>
+    </div>
+
+    <div id="userName">
+      💻Vlyx🎮
+    </div>
+
+    <div id="links">
+      <a class="link github" href="https://github.com/Ulysses-Alv" target="_blank">
+        <i class="fab fa-github">&nbsp;</i>Github
+      </a>
+      <a class="link linkedin" href="https://www.linkedin.com/in/alvarenga-ulises/" target="_blank">
+        <i class="fab fa-linkedin">&nbsp;</i>linkedin
+      </a>
+      <a class="link gamedev" href="https://farteamdev.blogspot.com/" target="_blank">
+        <i class="fab fa-wordpress">&nbsp;</i>Farm Game Dev
+      </a>
+      <a class="music">
+        <i class="fab fa-spotify">&nbsp;</i>Good Music
+      </a>
+      <!--
+      <a class="link" href="" target="_blank">
+        <i class="fa fa-paperclip">&nbsp;</i>Portafolio
+      </a>
+      <a class="link" href="https://www.youtube.com/" target="_blank">
+        <i class="fab fa-youtube">&nbsp;</i>Youtube
+      </a>
+      <a class="link" href="https://www.twitch.tv/" target="_blank">
+        <i class="fab fa-twitch">&nbsp;</i>Twitch
+      </a>
+      -->
+      </a>
+      
+      <div style="display: flex; align-content: center; justify-content: center;">
+        <iframe id="miIframe" src="" width="650" height="80"  frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+      </div>
+      <div>
+
+      </div>
+      <script>
+        var urls = [
+        "https://open.spotify.com/embed/track/6OzUIp8KjuwxJnCWkXp1uL?utm_source=generator",
+        "https://open.spotify.com/embed/track/5ildQOEKmJuWGl2vRkFdYc?utm_source=generator",
+        "https://open.spotify.com/embed/track/4kXxEhuatrvwrTQycA7s9B?utm_source=generator",
+        "https://open.spotify.com/embed/track/1V32pCGXZMgcmXd5MUMDL1?utm_source=generator",
+        "https://open.spotify.com/embed/track/2Io2LJQRWDMfhhfqPu2KG1?utm_source=generator",
+        "https://open.spotify.com/embed/track/6hH6QJ9ZAO0Z6m7PfvLoXW?utm_source=generator",
+        "https://open.spotify.com/embed/track/422Avi2VjqZKCVzstKmqog?utm_source=generator",
+        "https://open.spotify.com/embed/track/4YKP5UKFofcfW7EMjIsVvG?utm_source=generator",
+        "https://open.spotify.com/embed/track/5v08rOeaJwVIpllUkIRCMI?utm_source=generator",
+        "https://open.spotify.com/embed/track/1nZJhX71HCQuyaCIyojXNG?utm_source=generator",
+        "https://open.spotify.com/embed/track/1xXQCSt0xkfeGhe18ey2p8?utm_source=generator",
+        "https://open.spotify.com/embed/track/2wK7D7i9bfVt3uLjFsZSEU?utm_source=generator",
+        "https://open.spotify.com/embed/track/2byu6eeLWaBq88ZtusqU4V?utm_source=generator",
+        "https://open.spotify.com/embed/track/4Ol6lxivp7pR7voovl8vKI?utm_source=generator",
+        ];
+  
+        var randomIndex = Math.floor(Math.random() * urls.length);
+        var iframe = document.getElementById("miIframe");
+        iframe.src = urls[randomIndex];
+      </script>
+      </a>
+    </div>
+    <div id="hashtag">
+      #Peaches
+    </div>
+    <div id="cursor" class="Cursor"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.1/TweenMax.min.js"></script>
+    <script  src="./script.js"></script>
+  </body>
+</html>
