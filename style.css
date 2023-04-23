@@ -51,7 +51,7 @@ body {
     background: radial-gradient(ellipse at bottom, var(--bgColor) 0%, var(--bgColor2) 100%); 
     /* background-image: url('https://bit.ly/3nFVqJh');  */
     opacity: 0;
-    overflow: hidden;
+    overflow-x: auto;
     animation: 1s ease-out var(--delay) 1 transitionAnimation; /* duration/timing-function/delay/iterations/name */
     animation-fill-mode: forwards;
     background-repeat: no-repeat;
@@ -147,6 +147,9 @@ body {
 .gamedev {
     color:rgb(255, 110, 127)
 }
+.discord{
+    color:rgb(56, 136, 183)
+}
 @media (hover: hover) {
     .link:hover {
         background-color: var(--accentColor);
@@ -190,6 +193,24 @@ body {
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: rgba(255, 255, 255, 0);
+}
+.footerText {
+    
+    font-family: var(--font);
+    display: block;
+    margin: 100px auto;
+    position: relative;
+    background-color: transparent;
+    color: rgba(255, 255, 255, 0.539);
+    font-size: 1rem;
+    text-align: center;
+    display: block;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    padding: 10px; /* 17px */
+    text-decoration: none;
+
 }
 
 .Cursor {

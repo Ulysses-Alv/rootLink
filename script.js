@@ -3,7 +3,11 @@ Ink Cursor Script by Ricardo Mendieta
 https://dribbble.com/shots/5319749-Ink-Cursor-Interaction
 */
 
+if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+    document.getElementById("cursor").remove()
+    console.log("Is A phone")
 
+} 
 function _defineProperty(obj, key, value) {
     if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); }
     else { obj[key] = value; } return obj;
