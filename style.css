@@ -147,8 +147,24 @@ body {
 .gamedev {
     color:rgb(255, 110, 127)
 }
+.twitch{
+  color:rgb(113, 77, 245)
+}
+.youtube {
+  color:rgb(238, 57, 78)
+}
+.portfolio{
+  color:rgb(76, 246, 150)
+}
 .discord{
-    color:rgb(56, 136, 183)
+  color:rgb(56, 136, 183)
+}
+.email {
+  color:rgb(121, 121, 121)
+}
+
+.curriculum {
+  color:rgb(242, 242, 242)
 }
 @media (hover: hover) {
     .link:hover {
