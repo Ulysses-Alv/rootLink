@@ -2,144 +2,123 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Ulises Alvarenga | RootLink</title>
-  <!-- Favicon -->
-  <link rel="icon" href="https://avatars.githubusercontent.com/Ulysses-alv" type="image/x-icon" />
-  <!-- Font Awesome icons -->
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <!-- Core theme CSS -->
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="main.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ulises Alvarenga | RootLink</title>
+    <!-- Favicon -->
+    <link rel="icon" href="https://avatars.githubusercontent.com/Ulysses-alv" type="image/x-icon" />
+    <!-- Font Awesome icons -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Core theme CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/main.css">
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.4/gsap.min.js"
-    integrity="sha512-3WGIRFCuTpZhqYujwLp5RtARPkOy3uRtc3RXB31bJ9/i6VH2C66Z0WBV6gHhdhbUIDKFx8yTkLfEjdQM5Wl+ZQ=="
-    crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.4/gsap.min.js"
+        integrity="sha512-3WGIRFCuTpZhqYujwLp5RtARPkOy3uRtc3RXB31bJ9/i6VH2C66Z0WBV6gHhdhbUIDKFx8yTkLfEjdQM5Wl+ZQ=="
+        crossorigin="anonymous"></script>
 </head>
 
 <body class="hideScroll">
-  <!-- Animación de fondo parallax -->
-  <section class="animated-background">
-    <div id="stars1"></div>
-    <div id="stars2"></div>
-    <div id="stars3"></div>
-  </section>
-  <!-- Fin de la animación de fondo parallax -->
+    <!-- Animación de fondo parallax -->
+    <section class="animated-background">
+        <div id="stars1"></div>
+        <div id="stars2"></div>
+        <div id="stars3"></div>
+    </section>
+    <!-- Fin de la animación de fondo parallax -->
 
-  <a id="profilePicture" href="#popup">
-    <img src="https://avatars.githubusercontent.com/Ulysses-alv" alt="Profile Picture">
-  </a>
+    <a id="profilePicture" href="#popup">
+        <img src="https://avatars.githubusercontent.com/Ulysses-alv" alt="Profile Picture">
+    </a>
 
-  <div class="overlay" id="popup">
-    <div class="popup">
-      <div class="popup-photo">
-        <a href="https://avatars.githubusercontent.com/Ulysses-alv" target="_blank">
-          <img src="https://avatars.githubusercontent.com/Ulysses-alv" alt="Profile Picture">
+    <div class="overlay" id="popup">
+        <div class="popup">
+            <div class="popup-photo">
+                <a href="https://avatars.githubusercontent.com/Ulysses-alv" target="_blank">
+                    <img src="https://avatars.githubusercontent.com/Ulysses-alv" alt="Profile Picture">
+                </a>
+            </div>
+            <div class="popup-quote">
+                Peaches. Peaches. Peaches. Peaches.
+            </div>
+            <a class="popup-close" onclick="history.back()">&times;</a>
+        </div>
+    </div>
+
+    <div id="userName">
+        💻Vlyx🎮
+    </div>
+
+    <section class="links">
+        <h3>//&nbsp;Portfolio
+            <hr />
+        </h3>
+        <a href="https://github.com/Ulysses-Alv?tab=repositories" target="_blank" onmouseenter="onMouseEnter()"
+            onmouseleave="onMouseExit()" class="nocursor">
+            <div class="icon"><i class="fab fa-github"></i></div>
+            Github Repositories
+            <span class="u-name">@Ulysses-Alv</span>
         </a>
-      </div>
-      <div class="popup-quote">
-        Peaches. Peaches. Peaches. Peaches.
-      </div>
-      <a class="popup-close" onclick="history.back()">&times;</a>
-    </div>
-  </div>
-
-  <div id="userName">
-    💻Vlyx🎮
-  </div>
-
-  <section class="links">
-    <h3>//&nbsp;Projects
-      <hr />
-    </h3>
-    <a href="https://github.com/Ulysses-Alv" target="_blank" onmouseenter="onMouseEnter()" onmouseleave="onMouseExit()" class="nocursor">
-      <div class="icon"><i class="fab fa-github"></i></div>
-      Github
-      <span class="u-name">@Ulysses-Alv</span>
-    </a>
-    <a href="https://github.com/Ulysses-Alv?tab=repositories" target="_blank" onmouseenter="onMouseEnter()" onmouseleave="onMouseExit()" class="nocursor">
-      <div class="icon"><i class="fa fa-paperclip"></i></div>
-      Portafolio
-      <span class="u-name">@Ulysses-Alv</span>
-    </a>
-    <a href="https://farteamdev.blogspot.com/" target="_blank" onmouseenter="onMouseEnter()" onmouseleave="onMouseExit()" class="nocursor"> 
-      <div class="icon"><i class="fab fa-wordpress"></i></div>
-      Farm Game Dev
-      <span class="u-name">@F.a.R Team</span>
-    </a>
+        <a href="projects.html" target="_self" onmouseenter="onMouseEnter()" onmouseleave="onMouseExit()"
+            class="nocursor">
+            <div class="icon"><i class="fa fa-paperclip"></i></div>
+            Projects
+            <span class="u-name">@Ulysses-Alv</span>
+        </a>
+        <a class="link curriculum nocursor"
+            href="https://docs.google.com/document/d/e/2PACX-1vQzo3ZAMNWjE-zmzaGp_5D5x6DL_5szOc5lyoeaIKRxliY9TT_d63mj_xSMaIJpV7nUyFfRG_eA4fbh/pub"
+            target="_blank" onmouseenter="onMouseEnter()" onmouseleave="onMouseExit()">
+            <div class="icon"><i class="fa fa-file">&nbsp;</i></div>
+            Curriculum
+            <span class="u-name">Ulises Alvarenga</span>
+        </a>
 
 
-    <h3>//&nbsp;Contact
-      <hr />
-    </h3>
-    <a href="https://www.linkedin.com/in/alvarenga-ulises/" target="_blank"  onmouseenter="onMouseEnter()" onmouseleave="onMouseExit()" class="nocursor">
-      <div class="icon"><i class="fa fa-linkedin"></i></div>
-      LinkedIn
-      <span class="u-name">@Ulises-Alvarenga</span>
-    </a>
-    <a onclick="copyToClipboard('ulises.j.alvarenga@gmail.com', 'email', 'fa fa-envelope', ' E-mail')" id="email" onmouseenter="onMouseEnter()" onmouseleave="onMouseExit()" class="nocursor">
-      <div class="icon"><i class="fa fa-envelope"></i></div>
-      E-mail
-      <span class="u-name">ulises.j.alvarenga@gmail.com</span>
-    </a>
-    <a class="link discord" onclick="copyToClipboard('VLYX#4398', 'discord', 'fab fa-discord', 'vlyx')" id="discord" onmouseenter="onMouseEnter()" onmouseleave="onMouseExit()" class="nocursor">
-      <div class="icon"><i class="fab fa-discord"></i></div>
-      Discord
-      <span class="u-name">VLYX#4398</span>
-    </a>
-    <a class="link curriculum nocursor"
-      href="https://docs.google.com/document/d/e/2PACX-1vQzo3ZAMNWjE-zmzaGp_5D5x6DL_5szOc5lyoeaIKRxliY9TT_d63mj_xSMaIJpV7nUyFfRG_eA4fbh/pub"
-      target="_blank" onmouseenter="onMouseEnter()" onmouseleave="onMouseExit()" >
-      <div class="icon"><i class="fa fa-file">&nbsp;</i></div>
-      Curriculum
-      <span class="u-name">Ulises Alvarenga</span>
-
-      
-    </a>
-
-    <h3>//&nbsp;Music
-      <hr />
-    </h3>
-    <a class="link music" onclick="ReRoll()">
-      <i class="fab fa-spotify">&nbsp;</i>Top Music (Click to Re-roll)
-    </a>
-    <div style="display: flex; align-content: center; justify-content: center;">
-      <iframe id="miIframe" src="" width="650" height="80" frameborder="0" allowtransparency="true"
-        allow="encrypted-media"></iframe>
-    </div>
+        <h3>//&nbsp;Contact
+            <hr />
+        </h3>
+        <a href="https://www.linkedin.com/in/alvarenga-ulises/" target="_blank" onmouseenter="onMouseEnter()"
+            onmouseleave="onMouseExit()" class="nocursor">
+            <div class="icon"><i class="fa fa-linkedin"></i></div>
+            LinkedIn
+            <span class="u-name">@Ulises-Alvarenga</span>
+        </a>
+        <a onclick="copyToClipboard('ulises.j.alvarenga@gmail.com', 'email', 'fa fa-envelope', ' E-mail')" id="email"
+            onmouseenter="onMouseEnter()" onmouseleave="onMouseExit()" class="nocursor">
+            <div class="icon"><i class="fa fa-envelope"></i></div>
+            E-mail
+            <span class="u-name">ulises.j.alvarenga@gmail.com</span>
+        </a>
+        <a class="link discord" onclick="copyToClipboard('VLYX#4398', 'discord', 'fab fa-discord', 'vlyx')" id="discord"
+            onmouseenter="onMouseEnter()" onmouseleave="onMouseExit()" class="nocursor">
+            <div class="icon"><i class="fab fa-discord"></i></div>
+            Discord
+            <span class="u-name">VLYX#4398</span>
+        </a>
 
 
-    <!---
-      <h3>//&nbsp;Social
-        <hr />
-      </h3> 
-      <a href="" target="_blank">
-        <div class="icon"><i class="fab fa-twitch"></i></div>
-        Twitch
-        <span class="u-name">@</span>
-      </a>
-      <a href="" target="_blank">
-        <div class="icon"><i class="fab fa-youtube"></i></div>
-        YouTube
-        <span class="u-name">@</span>
-      </a>
-      <a href="" target="_blank">
-        <div class="icon"><i class="fab fa-instagram"></i></div>
-        YouTube
-        <span class="u-name">@</span>
-      </a>
--->
-  </section>
-  <div class="cursor"></div>
+        <h3>//&nbsp;Music
+            <hr />
+        </h3>
+        <a class="link music" onclick="ReRoll()">
+            <i class="fab fa-spotify">&nbsp;</i>Top Music (Click to Re-roll)
+        </a>
+        <div style="display: flex; align-content: center; justify-content: center;">
+            <iframe id="miIframe" src="" width="650" height="80" frameborder="0" allowtransparency="true"
+                allow="encrypted-media"></iframe>
+        </div>
 
-  <script src="music.js"></script>
-  <script src="linksScripts.js"></script>
+    </section>
+    <div class="cursor"></div>
+    <script src="scripts/music.js"></script>
+    <script src="scripts/linksScripts.js"></script>
+    <script src="scripts/cursor.js"></script>
+
 
 </body>
 <footer>
-  <p class="footerText">© Ulises Alvarenga 2023</p>
+    <p class="footerText">© Ulises Alvarenga 2023</p>
 
 </footer>
 

@@ -1,0 +1,163 @@
+.acordeon {
+    width: auto;
+    max-width: 90%;
+    margin: 0 10px;
+    padding: 10px;
+}
+
+.item {
+    border: 0px solid #ccc;
+    margin-bottom: 5px;
+}
+
+.boton {
+    font-size: large;
+    font-family: "Karla", sans-serif;
+    width: 100%;
+    padding: 10px;
+    text-align: left;
+    background-color: #989898;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.divisor {
+    color: white;
+}
+
+.contenido {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-in-out;
+    padding: 10px;
+    background-color: transparent;
+    border: none;
+    margin: 0 10px
+}
+
+.p {
+    margin-top: 0px;
+}
+
+.titulo {
+    text-decoration: underline;
+}
+
+.contenido li {
+    font-size: large;
+    text-align: left;
+    /* Alineación a la izquierda */
+    text-justify: justify;
+    /* Justificado */
+    color: white;
+    /* Color de texto blanco */
+
+}
+
+.contenido p {
+    font-size: large;
+    text-align: left;
+    /* Alineación a la izquierda */
+    text-justify: justify;
+    /* Justificado */
+    color: white;
+    /* Color de texto blanco */
+    margin-top: 10px;
+}
+
+.contenido-flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.texto {
+    flex: 1;
+}
+
+.imagenes {
+    flex: 1;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.imagenes img {
+    max-width: 100%;
+    height: auto;
+    margin: 10px;
+}
+
+/* Acomodación específica de las imágenes */
+.imagenes img:nth-child(1) {
+    order: 2;
+}
+
+.imagenes img:nth-child(2) {
+    order: 3;
+}
+
+.imagenes img:nth-child(3) {
+    order: 1;
+    align-self: flex-start;
+}
+
+.imagenes img:nth-child(4) {
+    order: 4;
+    align-self: flex-start;
+}
+
+
+.urls {
+    display: flex;
+    flex: 1 450px;
+    flex-direction: column;
+    align-items: left;
+    text-align: left;
+    gap: 10px;
+    width: 100%;
+
+}
+
+/* Estilo base para el iframe */
+iframe {
+    width: 100%;
+    height: auto;
+    max-width: 100%; /* Asegura que el iframe no se extienda más allá del ancho del contenedor padre */
+}
+
+.textoo {
+    text-justify: justify;
+    margin: 1px;
+}
+/* Media query para dispositivos móviles */
+@media (max-width: 767px) {
+    .acordeon {
+        width: 100%;
+        /* Ancho del 100% en dispositivos móviles */
+        max-width: none;
+        /* Eliminar el ancho máximo en dispositivos móviles */
+    }
+
+    .acordeon,
+    .item,
+    .boton,
+    .contenido {
+        margin: 0 auto;
+        /* Centrar en la pantalla en dispositivos móviles */
+    }
+    iframe {
+        max-width: 100%; /* Ajusta el ancho máximo para pantallas pequeñas */
+        height: auto; /* Permite que la altura se ajuste automáticamente */
+    }
+}
+
+.urls a {
+    color: rgb(146, 252, 174);
+}
+
+
+
+body {
+    cursor: default;
+}

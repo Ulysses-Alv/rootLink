@@ -9,7 +9,24 @@
   /*animation: cursorAnim 0.5s infinite alternate; */
   pointer-events: none;
 }
+@media (max-width: 767px) {
+  .cursor {
+    width: 0px;
+    height: 0px;
+    border: 0px solid rgba(255, 255, 255, 0);
+    border-radius: 0%;
+  }
+}
 
+/* Media query para computadoras */
+@media (min-width: 768px) {
+  .cursor {
+    width: 20px;
+    height: 20px;
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 50%;
+  }
+}
 .cursor::after {
   content: "";
   width: 20px;
@@ -71,13 +88,6 @@
   border: 5px solid rgb(255, 0, 0);
   animation: cursorAnim2 0.5s infinite alternate;}
 
-p {
-  color: white;
-  font-family: "arial";
-  text-align: center;
-  margin-top: 50px;
-  font-size: 1.4em;
-}
 p a {
   color: teal;
 }/*# sourceMappingURL=main.css.map */
