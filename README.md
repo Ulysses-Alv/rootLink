@@ -1,5 +1,5 @@
 # rootLink
-All my Digital links. (I'm still working on it)
+All my Links in a simple webpage. (not related with linktree)
 
-Credits to Santiago Fisela 
+Based on the work of Santiago Fisela 
 https://github.com/PinkLittleKitty
